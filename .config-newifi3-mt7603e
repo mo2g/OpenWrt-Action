@@ -23,9 +23,9 @@ CONFIG_PACKAGE_wpa-supplicant=y
 # end of Wireless Drivers
 
 # Open source WIFI driver
-#CONFIG_PACKAGE_kmod-mt7603=n
-#CONFIG_PACKAGE_kmod-mt76x2=n
-#CONFIG_PACKAGE_kmod-mt76x2-common=n
+CONFIG_PACKAGE_kmod-mt7603=n
+CONFIG_PACKAGE_kmod-mt76x2=n
+CONFIG_PACKAGE_kmod-mt76x2-common=n
 
 # Closed source WIFI driver
 CONFIG_PACKAGE_luci-app-mtwifi=y
@@ -75,7 +75,7 @@ CONFIG_DEFAULT_firewall=y
 CONFIG_DEFAULT_htop=y
 CONFIG_DEFAULT_iptables=y
 CONFIG_PACKAGE_tmux=y
-CONFIG_PACKAGE_xray-geodata=y
+CONFIG_PACKAGE_xray=y
 CONFIG_PACKAGE_bash=y
 CONFIG_PACKAGE_curl=y
 
