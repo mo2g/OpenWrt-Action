@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt-noNSS
+name: Build AX6-boos4721
 
 on:
   repository_dispatch:
