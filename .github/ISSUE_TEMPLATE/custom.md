@@ -12,13 +12,49 @@ assignees: mo2g
 ## 可用空间
 
 <details>
-<summary>距离路由器3米，加0堵墙</summary>
+<summary>[2.4G]距离路由器3米，加0堵墙</summary>
+
+```
+```
+
 </details>
 
 <details>
-<summary>距离路由器3米，加1堵墙</summary>
+<summary>[2.4G]距离路由器3米，加1堵墙</summary>
+
+```
+```
+
 </details>
 
 <details>
-<summary>距离路由器4米，加2堵墙</summary>
+<summary>[2.4G]距离路由器4米，加2堵墙</summary>
+
+```
+```
+
+</details>
+
+<details>
+<summary>[5G]距离路由器3米，加0堵墙</summary>
+
+```
+```
+
+</details>
+
+<details>
+<summary>[5G]距离路由器3米，加1堵墙</summary>
+
+```
+```
+
+</details>
+
+<details>
+<summary>[5G]距离路由器4米，加2堵墙</summary>
+
+```
+```
+
 </details>
