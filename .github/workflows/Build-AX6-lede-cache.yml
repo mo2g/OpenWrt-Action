@@ -68,8 +68,10 @@ jobs:
         echo "DATE=$(date "+%Y-%m-%d %H:%M:%S")" >> $GITHUB_ENV
         echo "DATE1=$(date "+%Y-%m-%d")" >> $GITHUB_ENV
 
-    - name: Revert some drop sh*t
-      run: cp -rf $GITHUB_WORKSPACE/general/xiaomi/* openwrt/
+    - name: Revert xiaomi devices support
+      run: |
+        rm -rf openwrt/package/network/utils/iw
+        cp -rf $GITHUB_WORKSPACE/general/xiaomi/* openwrt/
 
 
     - name: Cache
