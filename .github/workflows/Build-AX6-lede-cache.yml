@@ -71,6 +71,7 @@ jobs:
     - name: Revert xiaomi devices support
       run: |
         rm -rf openwrt/package/network/utils/iw
+        rm -rf openwrt/package/kernel/mac80211
         cp -rf $GITHUB_WORKSPACE/general/xiaomi/* openwrt/
 
 
