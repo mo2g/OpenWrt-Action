@@ -173,11 +173,11 @@ jobs:
         touch release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
-        echo "## Openwrt boos4721 固件说明" >> release.txt
+        echo "## immortalwrt ax6固件说明" >> release.txt
         echo "IP: 192.168.3.1" >> release.txt
         echo "WEB登陆账户: root" >> release.txt
         echo "密码: password" >> release.txt
-        echo "固件源码: https://github.com/coolsnowwolf/lede" >> release.txt
+        echo "固件源码: https://github.com/immortalwrt/immortalwrt" >> release.txt
         echo "分支: $REPO_BRANCH" >> release.txt
         echo "${{ env.useVersionInfo }}" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
