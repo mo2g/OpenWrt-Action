@@ -133,10 +133,13 @@ jobs:
 
     - name: Organize files
       id: organize
-      if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
+      if: steps.compile.outputs.status == 'success' && !cancelled()
       run: |
+        tar -zcvf AllPackages.tar.gz openwrt/bin/packages
+        mv AllPackages.tar.gz openwrt/bin/targets/*/*
         cd openwrt/bin/targets/*/*
-        rm -rf packages
+        tar -zcvf Packages.tar.gz packages
+        rm -rf packages config.buildinfo feeds.buildinfo sha256sums version.buildinfo *.manifest Packages.tar.gz
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "status=success" >> $GITHUB_OUTPUT
 
@@ -176,7 +179,7 @@ jobs:
         echo "## immortalwrt ax6固件说明" >> release.txt
         echo "IP: 192.168.3.1" >> release.txt
         echo "WEB登陆账户: root" >> release.txt
-        echo "密码: password" >> release.txt
+        echo "密码: none" >> release.txt
         echo "固件源码: https://github.com/immortalwrt/immortalwrt" >> release.txt
         echo "分支: $REPO_BRANCH" >> release.txt
         echo "${{ env.useVersionInfo }}" >> release.txt
