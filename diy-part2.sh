@@ -53,3 +53,5 @@ echo 'ulimit -HSn 655350' >> package/base-files/files/etc/profile
 
 #添加chinadns-ng防污染分配合ssp还行
 #git clone -b luci https://github.com/pexcn/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
+
+git clone https://github.com/zzsj0928/luci-app-pushbot package/luci-app-pushbot
